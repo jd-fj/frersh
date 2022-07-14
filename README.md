@@ -1,11 +1,1 @@
-# fresh project
-
-### Usage
-
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+Deployed site: [https://coin-checker.deno.dev/](https://coin-checker.deno.dev/)
