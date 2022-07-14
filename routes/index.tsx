@@ -3,7 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
-const url: string = "https://api.coindesk.com/v1/bpi/currentprice.json"
+const url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 export interface Price {
   time: Time
   disclaimer: string
@@ -63,7 +63,7 @@ export default function Home({data} : PageProps<Price | null>) {
     return <h1>Data is not available</h1>
   }
   return (
-    <div class={tw`w-screen h-screen bg-gray-500`}>
+    <div class={tw`w-screen h-screen`} style={`background-color: #86efac`}>
       <div class={tw`p-8 mx-auto max-w-screen-md`}>
         <img
           src="/magnum209.svg"
